@@ -1,0 +1,206 @@
+iframe {
+  width: 420;
+  height: 315;
+}
+
+#header {
+  position: fixed;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(2rem, 1fr) minmax(2rem, 1fr);
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  background-color: #fdecd0;
+  z-index: 5;
+  top: 0;
+}
+
+.background {
+  background-image: url(https://sites.duke.edu/nashervirtue/files/2016/02/Tflat-768x510.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 20rem;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2rem 0 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #999999;
+}
+
+.title {
+  z-index: 4;
+  text-align: center;
+}
+
+#header-img {
+  width: 5rem;
+  margin: 1rem;
+}
+
+section {
+  background-color: #fdecd0;
+}
+
+#about {
+  display: grid;
+  justify-content: center;
+  padding: 3rem 0 3rem 0;
+  width: 100vw;
+  
+}
+
+h3 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(2rem, 1fr);
+  row-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sculpture: {
+  justify-content: center;
+}
+
+.gallery-img {
+  margin: 2rem 2rem 0 2rem;
+  max-width: 80%;
+  hight: auto;
+  justify-content: center;
+}
+
+.description {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #997767;
+  padding: 3rem;
+  border: 3px solid black;
+  align-content: center;
+}
+
+label {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  text-align: center;
+  min-width: 0.5fr;
+}
+
+input {
+  background-color: #fdecd0;
+}
+
+#submit {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #7b7b8f;
+  border-color: white;
+  min-width: 0.5fr;
+}
+
+.email {
+  text-align: center;
+  margin: 1em auto;
+}
+
+@media (max-width: 500px)  {
+  #nav-bar {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0 0 0 0;
+    top: 0;
+    }
+  .background{
+    background-image: url(https://sites.duke.edu/nashervirtue/files/2016/02/Tflat-768x510.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 20rem;
+    background-color: #ffffff;
+    opacity: 0.6;
+    }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    }
+  li {
+      justify-content: center;
+    }
+  .title {
+    text-align: center;
+    margin: 0 0 0 0;
+    }
+  #header {
+    position: fixed;
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr);
+    grid-template-row: minmax(2rem, 1fr) minmax(2rem, 1fr) minmax(2rem, 1fr);
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdecd0;
+    z-index: 5;
+    top: 0;
+    }
+  #header-img {
+    margin: 0.5rem 40%;
+    max-width: 10%;
+    }
+  iframe {
+    margin: 2rem;
+    max-width: 80%;
+    height: auto;
+    }
+  .gallery {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr);
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    }
+  #about {
+  display: grid;
+  justify-content: center;
+  padding: 1rem 0 3rem 0;
+  width: 100vw;
+}
